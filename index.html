@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset=utf-8>
+		<title>Photo Album</title>
+		
+		
+    <style>
+        .gridBox {
+            padding: 1em;
+            border-width: 5px;
+            background: ghostwhite;
+            border-radius: 5px;
+            margin: 1em;
+        }
+    </style>
+
+
+		<!-- JQuery -->
+		<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+		
+		<!-- Bootstrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+    	
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/stylesheet/styles.css">
+	    <link rel="stylesheet" type="text/css" href="assets/stylesheet/pure-min.css">
+
+		<!-- Models -->
+		<script src="models/image.js"></script>
+		
+		<!-- Controllers -->
+		<script src="controllers/main.js"></script>
+		
+    </head>
+    <div class="content">
+    <ul class="nav nav-pills">
+      <li role="presentation" id="Home" class="active"><a href="#" >Home</a></li>
+      <li role="presentation" id="GeoSearch"><a href="#" >GeoSearch</a></li>
+    </ul>
+    <h1>Social Media Search</h1>
+
+    <h3>Want to find what social media pictures for a topic? but don't want to have search multiple sites
+    apps etc, just to do so? This search is for you.</h3>
+    <form class="pure-form search" onsubmit="search(this.text)">
+        <input class="pure-input-1" type="text" placeholder="Type something" id="searchBox"><br>
+        <input class="pure-input-1 hidden" type="text" placeholder="Latitude" id="searchLat" value="-16.932183"><br>
+        <input class="pure-input-1 hidden" type="text" placeholder="Longitude" id="searchLong" value="145.791321"><br>
+        
+        
+        <a class="pure-button" href="#" id="searchBtn">Search</a>
+        <a class="pure-button hidden" href="#" id="searchGeoBtn">Search Geo</a>
+
+    </form>
+    <div class="sk-cube-grid hidden">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+    <div class="pure-g" id="results">
+
+
+
+</html>
